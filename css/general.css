@@ -150,6 +150,18 @@ a {
 a:hover {
 	color: #A66E00;
 }
+a.link_tooltip {
+	text-decoration: none;
+	border-bottom: 1px dashed #006561;
+}
+	a.link_tooltip:hover {
+		border-bottom: 1px dashed #A66E00;
+	}
+.ui-tooltip {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 13px !important;
+	line-height: 20px !important;
+}
 a.pdf {
 	display: block;
 	padding: 0 0 0 35px;
@@ -204,6 +216,43 @@ table {
 		padding: 20px 0;
 		background: #000
 	}
+
+/**** Video Widget ****/
+.video {
+	text-align: center;
+}
+	.videoList {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+		.videoList li {
+			display: none;
+		}
+		.videoList li:first-child {
+			display: list-item;
+		}
+	.videoNav {
+		margin: 10px 0 0 0;
+	}
+		.videoNav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			.videoNav li {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin: 0 5px;
+				border: 1px solid #fff;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			.videoNav li.active,
+			.videoNav li:hover {
+				background: #fff;
+			}
 
 @media (max-width: 1280px) {
 	.tiles {
