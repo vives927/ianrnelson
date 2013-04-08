@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700|Lustria|Open+Sans:400,400italic,600);
+
+body {
+	background: url(../images/lined_40.png) repeat 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #000;
+}
+
+/* general structure */
+header, section, footer {
+	display: block;
+}
+header {
+	height: 160px;
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+}
+	header hgroup {
+		float: left;
+	}
+		hgroup h1 {
+			margin: 30px 0 0 0;
+			padding: 20px 0 0 87px;
+			height: 80px;
+			background: url(../images/red-couch_logo.png) no-repeat 0 0;
+			text-shadow: 1px 1px 1px #ddd;
+			white-space: nowrap;
+		}
+			hgroup h1 a {
+				color: #000;
+				text-decoration: none;
+			}
+			hgroup h1 a:hover {
+				color: #000;
+			}
+		hgroup p {
+			position: relative;
+			top: -32px;
+			left: 220px;
+			font-size: 13px;
+			line-height: 17px;
+		}
+	nav {
+		float: right;
+		margin: 63px 0 0 0;
+		font-size: 30px;
+		line-height: 1em;
+		font-family: Lustria, serif;
+	}
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			nav li {
+				float: left;
+			}
+			nav li::before {
+				content: '|';
+			}
+			nav li:first-child::before {
+				content: '';
+			}
+				nav a {
+					display: inline-block;
+					padding: 0 19px;
+					text-decoration: none;
+				}
+
+@media (max-width: 970px) {
+	header {
+		height: auto;
+	}
+	nav {
+		float: left;
+		margin: 0 0 30px 0;
+	}
+}
+@media (max-width: 320px) {
+	hgroup h1 {
+		padding: 20px 0 0 0;
+	}
+	hgroup p {
+		top: 0;
+		left: 0;
+	}
+	nav {
+		margin: 0 0 15px 0;
+		font-size: 23px;
+	}
+	nav li {
+		float: none;
+	}
+	nav li::before {
+		content: '';
+	}
+	nav a {
+		padding: 0;
+	}
+}
+				
+.main {
+	margin: 20px 0;
+	overflow: hidden;
+}
+footer {
+	border-top: 1px solid #000;
+}
+	footer p {
+		margin: 20px 0;
+	}
+
+/* general styles */
+h1 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: Quicksand, sans-serif;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 45px;
+}
+h2 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: Lustria, serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+}
+h2.redBack {
+	display: inline-block;
+	padding: 5px 10px;
+	background: #A40004;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+p {
+	margin: 0 0 15px 0;
+}
+p.disclaimer {
+	font-size: 11px;
+}
+em {
+}
+a {
+	color: #006561;
+}
+a:hover {
+	color: #A66E00;
+}
+a.pdf {
+	display: block;
+	padding: 0 0 0 35px;
+	min-height: 35px;
+	background: url(../images/pdf-icon_small.png) no-repeat 0 0;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.imgLeft {
+	float: left;
+	margin: 0 10px 10px 0;
+	padding: 2px;
+	border: 1px solid #000;
+}
+ul {
+	list-style-type: circle;
+}
+table {
+	margin: 0 0 20px 0;
+}
+
+/* Homepage styles */
+.tiles {
+	float: left;
+	width: 75%;
+}
+	.tile {
+		float: left;
+		display: inline-block;
+		padding: 20px;
+		margin: 0 2% 20px 0;
+		width: 48%;
+		border: 3px double #006561;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		overflow: hidden;
+	}
+		.contact .map {
+			margin: 0 0 20px 0;
+		}
+.sidebar {
+	float: right;
+	width: 25%;
+	color: #fff;
+	text-align: center;
+}
+	.photos,
+	.news {
+		width: 100%;
+		margin: 0px auto 20px;
+		padding: 20px 0;
+		background: #000
+	}
+
+@media (max-width: 1280px) {
+	.tiles {
+		width: 60%;
+	}
+		.tile {
+			float: none;
+			width: 98%;
+		}
+	.sidebar {
+		width: 40%;
+	}
+}
+@media (max-width: 800px) {
+	.tiles {
+		float: none;
+		width: 100%;
+	}
+		.tile {
+			width: 100%;
+		}
+	.sidebar {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* FAQ page styles */
+.accGroup {
+	padding: 15px 0;
+}
+.accGroup:last-child {
+	border-bottom: 0;
+}
+	.accHead {
+		font-family: Lustria, serif;
+		font-weight: normal;
+		font-size: 21px;
+		line-height: 21px;
+		cursor: pointer;
+	}
+	.accBody {
+		display: none;
+		padding: 10px 0 0 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.accGroup .arrow {
+		font-size: 12px;
+	}

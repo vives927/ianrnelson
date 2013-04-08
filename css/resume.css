@@ -1,0 +1,27 @@
+body {
+    font:normal 14px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1, h2 {
+    margin:15px 0 0 0;
+    padding:0;
+}
+
+p {
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+.quote {
+    font-size:18px;
+    margin:20px 0 0 0;
+}
+
+.contact {
+    margin:0;
+    padding:0;
+}
+
+.contact li {
+    display:inline;
+}
