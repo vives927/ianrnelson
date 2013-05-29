@@ -105,12 +105,8 @@ header {
 	margin: 20px 0;
 	overflow: hidden;
 }
-footer {
-	border-top: 1px solid #000;
-}
-	footer p {
-		margin: 20px 0;
-	}
+
+
 
 /* general styles */
 h1 {
@@ -301,4 +297,18 @@ table {
 	}
 	.accGroup .arrow {
 		font-size: 12px;
+	}
+
+
+/* Footer */
+footer {
+	padding: 20px 0;
+	border-top: 1px solid #000;
+	overflow: hidden;
+}
+	footer .left-content {
+		float: left;
+	}
+	.psych-today {
+		float: right;
 	}
