@@ -1,24 +1,3 @@
-function accordion($el) {
-	$el.find('div.accGroup').each(function() {
-		var $trigger = $(this).find('div.accHead'),
-			$content = $(this).find('div.accBody'),
-			$arrow = $(this).find('span.arrow'),
-			isOpen = false;
-
-		$trigger.click(function() {
-			if(!isOpen) {
-				$content.slideDown();
-				isOpen = true;
-				$arrow.html('&#x25B2;');
-			} else {
-				$content.slideUp();
-				isOpen = false;
-				$arrow.html('&#x25BC;');
-			}
-		});
-	});
-}
-
 function bulletNav($el) {
 	"use strict";
 	var $item = $el.find('ul.videoList').children('li'),
@@ -79,7 +58,6 @@ function bulletNav($el) {
 }
 
 
-
 $(document).ready(function() {
 	accordion($('div.faqPage'));
 	bulletNav($('div.video'));
@@ -87,4 +65,6 @@ $(document).ready(function() {
 	$('a.link_tooltip').click(function(e) {
 		e.preventDefault();
 	});
+
+	$('div.faqInner').perfectScrollbar();
 });
