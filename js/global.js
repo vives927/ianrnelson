@@ -59,7 +59,6 @@ function bulletNav($el) {
 
 
 $(document).ready(function() {
-	accordion($('div.faqPage'));
 	bulletNav($('div.video'));
 	$('a.link_tooltip').tooltip();
 	$('a.link_tooltip').click(function(e) {
