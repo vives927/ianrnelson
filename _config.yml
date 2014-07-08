@@ -1,0 +1,16 @@
+name: IanRNelson
+url: "http://localhost:7000"
+include: [
+    "_*.scss"
+]
+exclude: [
+    "README.md",
+    "css",
+    "*.zip",
+    "*.bat",
+    "package.json"
+]
+keep_files: [
+    "css"
+]
+port: 7000

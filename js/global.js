@@ -64,6 +64,5 @@ $(document).ready(function() {
 	$('a.link_tooltip').click(function(e) {
 		e.preventDefault();
 	});
-
 	$('div.faqInner').perfectScrollbar();
 });
