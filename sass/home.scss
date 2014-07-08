@@ -1,40 +1,112 @@
 /* Homepage styles */
-.tiles {
-    float: left;
-    width: 75%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-    .tile {
-        //float: left;
-        //display: inline-block;
-        padding: 20px;
-        margin: 0 2% 20px 0;
-        width: 48%;
-        border: 3px double #006561;
-        overflow: hidden;
+.hero {
+    height: 563px;
+    background: url(../images/bg_fog_short.jpg) no-repeat center top;
+    color: whitesmoke;
+
+    h1 {
+        padding: 120px 0 0;
+        margin: 0;
     }
-        .contact .map {
-            margin: 0 0 20px 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.center {
+    padding: 0 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.columns {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.services {
+    padding: 50px 0;
+    background: #E0EEEE;
+    overflow: hidden;
+
+    .left {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0 15px 0 0;
+    }
+
+    .right {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0 0 0 15px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
         }
-.sidebar {
-    float: right;
-    width: 25%;
-    color: #fff;
-    text-align: center;
-}
-    .photos,
-    .news {
-        width: 100%;
-        margin: 0px auto 20px;
-        padding: 20px 0;
-        background: #000
     }
+}
+
+.faq {
+    padding: 50px 0;
+    overflow: hidden;
+
+    .left {
+        float: left;
+        width: 50%;
+        padding: 0 15px 0 0;
+    }
+
+    .right {
+        float: left;
+        width: 50%;
+        padding: 0 0 0 15px;
+    }
+}
+
+.contact {
+    padding: 50px 0 30px;
+    background: #4A4A4A;
+    color: #fff;
+    overflow: hidden;
+
+    a {
+        color: inherit;
+    }
+
+    .left {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0 15px 0 0;
+    }
+
+    .right {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0 0 0 15px;
+    }
+}
+
+.footer {
+    clear: both;
+    padding: 30px 0 0;
+}
+
 
 /**** Video Widget ****/
 .video {
@@ -73,7 +145,7 @@
                 background: #fff;
             }
 
-@media (max-width: 1280px) {
+/*@media (max-width: 1280px) {
     .tiles {
         width: 60%;
     }
@@ -97,4 +169,4 @@
         float: none;
         width: 100%;
     }
-}
+}*/
