@@ -60,9 +60,4 @@ function bulletNav($el) {
 
 $(document).ready(function() {
 	bulletNav($('div.video'));
-	$('a.link_tooltip').tooltip();
-	$('a.link_tooltip').click(function(e) {
-		e.preventDefault();
-	});
-	$('div.faqInner').perfectScrollbar();
 });
