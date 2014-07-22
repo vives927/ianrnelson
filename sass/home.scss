@@ -2,16 +2,16 @@
 
 /* Homepage styles */
 .Hero {
-    height: 414px;
-    background: url(../images/bg_fog_mobile.jpg) no-repeat right top;
+    height: 338px;
+    background: url(../images/bg_shoreline_mob.jpg) no-repeat center top;
     color: $whiteSmoke;
 
     .heading {
         margin: 0 auto;
-        padding: 30px 0;
-        color: $whiteSmoke;
+        padding: 20px 0;
+        color: $black;
         text-align: center;
-        text-shadow: 1px 1px 1px $black;
+        text-shadow: 1px 1px 1px $white;
     }
 
     h1 {
@@ -28,15 +28,17 @@
         font-weight: 600;
     }
 
-    @media (min-width: $medium) {
-        height: 658px;
+    @media (min-width: $small) {
+        background: url(../images/bg_shoreline_tab.jpg) no-repeat center top;
+    }
+
+    @media (min-width: 1025px) {
+        height: 660px;
         padding: 120px 0 0;
-        background: url(../images/bg_fog_short.jpg) no-repeat center top;
+        background: url(../images/bg_shoreline.jpg) no-repeat center top;
 
         .heading {
             width: 600px;
-            border: 4px double $whiteSmoke;
-            background: rgba($black, .3);
         }
     }
 }
