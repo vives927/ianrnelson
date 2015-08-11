@@ -9,41 +9,35 @@
     <meta name="keywords" content="{{ page.keywords }}" />
     <link href="http://fonts.googleapis.com/css?family=Lustria|Open+Sans:300,400,400italic,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" type="text/css" />
-    <link rel="stylesheet" href="css/general.css" type="text/css" />
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
     {% for sheet in page.styles %}
         <link rel="stylesheet" href="css/{{sheet}}">
     {% endfor %}
     <!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
-<body>
+<body class="{{ page.bodyClass }}">
 
     <header class="Header">
         <div class="center">
-            <h1><a href="index.html" title="Ian R. Nelson">Ian R. Nelson, M.A.</a></h1>
-            <p class="license">Temporary Limited Licensed Psychologist</p>
+            <div class="logo">
+                <div class="title"><a href="index.html" title="Ian R. Nelson">Ian R. Nelson, M.A.</a></div>
+                <div class="license">Limited Licensed Psychologist</div>
+            </div>
         </div>
-        <!--<nav class="Header-nav">
-            <ul>
-                <li><a href="services.html" title="Services">SERVICES</a></li>
-                <li><a href="faq.html" title="FAQ">FAQ</a></li>
-                <li><a href="contact.html" title="Contact">CONTACT</a></li>
-            </ul>
-        </nav>-->
     </header>
 
     <div class="Main">{{ content }}</div>
 
     <div class="Footer">
         <div class="center">
-            <p class="disclaimer">&copy; 2014 Ian R. Nelson</p>
+            <p class="disclaimer">&copy; 2015 Ian R. Nelson</p>
             <p class="disclaimer">*The views and opinions expressed on this website are solely those of Ian Nelson. Pine Rest Christian Mental Health Services is in no way responsible for the content of this website.</p>
         </div>
     </div>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    <script src="js/global.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery-ui.js"></script>
     {% for file in page.scripts %}
         <script src="js/{{file}}"></script>
     {% endfor %}
