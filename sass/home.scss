@@ -31,6 +31,33 @@
         }
     }
 
+    .open-plans {
+        cursor: pointer;
+    }
+
+    .caret {
+        display: inline-block;
+        margin-left: 10px;
+        transform: rotate(90deg);
+        font-size: 13px;
+    }
+
+    .plans {
+        visibility: visible;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: visibility 0.3s,
+            opacity 0.3s,
+            height 0.3s;
+
+        &.is-open {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+        }
+    }
+
     @media (min-width: $medium) {
         padding: 50px 0;
 

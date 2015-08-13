@@ -4,6 +4,7 @@ description: View Ian R. Nelson's bio, services and accepted insurance plans. Ch
 keywords: counseling, therapy, psychologist, grand rapids, medicaid provider, meridian, mclaren, asr health benefits, priority health, accepting new patients
 layout: default
 styles: home.css
+scripts: home.js
 bodyClass: Home
 ---
 
@@ -42,7 +43,32 @@ bodyClass: Home
         --><div class="right">
             <img src="images/bg_sea_crop.jpg" alt="thinking man" class="shadow">
         </div>
-        <p><strong>Accepted Insurance Plans:</strong> Priority Health Medicaid, McLaren Health Plan, McLaren Medicaid, Meridian Medicaid, ASR Health Benefits</p>
+        <p><strong class="open-plans" id="InsurancePlansToggle">See accepted insurance plans <span class="caret">&#9002;</span></strong> 
+            <ul class="plans" id="InsurancePlansList">
+                <li>Blue Cross Blue Shield
+                <li>Priority Health
+                <li>Priority Health Medicaid
+                <li>Aetna
+                <li>Behavioral Health Systems
+                <li>Cofinity
+                <li>Coventry Health Care
+                <li>Employee Assistance Group
+                <li>Grand Valley Health Plan
+                <li>Health Alliance Plan
+                <li>Human Management Services
+                <li>Health Management Services of America
+                <li>Integrated Health Plan
+                <li>Magellan
+                <li>McLaren Health Plan
+                <li>McLaren Medicaid
+                <li>Meridian Medicaid
+                <li>Mutual of Omaha
+                <li>ASR Physicians Care
+                <li>Teamsters
+                <li>United Behavioral Health
+                <li>Value Options
+            </ul>
+        </p>
     </div>
 </div>
 
