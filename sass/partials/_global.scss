@@ -115,7 +115,7 @@ a.link_tooltip {
     padding: 20px 0;
     border-bottom: 1px solid $black;
     color: $black;
-    background: rgba(#4a4a4a, 0.1);
+    background-color: rgba(#4a4a4a, 0.1);
 
     .logo {
         padding: 20px 0;
@@ -138,20 +138,22 @@ a.link_tooltip {
 
     .Home & {
         height: 338px;
-        background: url(../images/bg_shoreline_mob.jpg) no-repeat center top;
+        background-image: url(../images/bg_shoreline_mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
 
         .logo {
             text-align: center;
         }
 
         @media (min-width: $small) {
-            background: url(../images/bg_shoreline_tab.jpg) no-repeat center top;
+            background-image: url(../images/bg_shoreline_tab.jpg);
         }
 
         @media (min-width: 1025px) {
             height: 660px;
             padding: 120px 0 0;
-            background: url(../images/bg_shoreline.jpg) no-repeat center top;
+            background-image: url(../images/bg_shoreline.jpg);
         }
     }
 
