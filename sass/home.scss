@@ -1,25 +1,60 @@
 @import "partials/base";
 
-.About {
-    padding: 30px 0;
+.Bands {
+
+    .Band {
+        padding: 30px 0;
+        background: #fff;
+
+        &:nth-child(even) {
+            background: $lightBlue;
+        }
+    }
 
     @media (min-width: $medium) {
-        padding: 50px 0;
+        
+        .Band {
+            padding: 50px 0;
+        }
+    }
+}
+
+.About {
+
+    @media (min-width: $medium) {
 
         .columns {
-            -moz-column-count: 2;
-            -webkit-column-count: 2;
-            column-count: 2;
-            -moz-column-gap: 30px;
-            -webkit-column-gap: 30px;
-            column-gap: 30px;
+            overflow: hidden;
+        }
+
+        .text {
+            float: left;
+            width: percentage(735 / 960);
+        }
+
+        .img {
+            float: left;
+            width: percentage(175 /960);
+            margin-right: percentage(50 / 960);
+
+            img {
+                max-width: 100%;
+            } 
+        }
+    }
+}
+
+.Experience {
+
+    .skills {
+
+        li {
+            padding: 0 0 7px;
         }
     }
 }
 
 .Services {
-    padding: 30px 0;
-    background: $lightBlue;
     overflow: hidden;
 
     .right {
@@ -31,35 +66,20 @@
         }
     }
 
-    .open-plans {
-        cursor: pointer;
+    .insurance-plans {
+        padding-top: 30px;
     }
 
-    .caret {
-        display: inline-block;
-        margin-left: 10px;
-        transform: rotate(90deg);
-        font-size: 13px;
+    .toggle-plans {
+        cursor: pointer;
+        font-weight: 700;
     }
 
     .plans {
-        visibility: visible;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transition: visibility 0.3s,
-            opacity 0.3s,
-            height 0.3s;
-
-        &.is-open {
-            visibility: visible;
-            opacity: 1;
-            height: auto;
-        }
+        display: none;
     }
 
     @media (min-width: $medium) {
-        padding: 50px 0;
 
         .left {
             display: inline-block;
@@ -74,11 +94,15 @@
             width: 40%;
             padding: 0 0 0 15px; 
         }
+
+        .plans ul {
+            float: left;
+            margin-right: 50px;
+        }
     }
 }
 
 .Faq {
-    padding: 30px 0;
     overflow: hidden;
 
     .more {
@@ -88,7 +112,6 @@
     }
 
     @media (min-width: $medium) {
-        padding: 50px 0;
 
         .left {
             float: left;
