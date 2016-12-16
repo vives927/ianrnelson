@@ -1,0 +1,45 @@
+@import "partials/base";
+
+.ResourcesPage {
+    padding: 30px 0;
+
+    > .center {
+        overflow: hidden;
+    }
+
+    .resource-list {
+
+        li {
+            padding: 0 0 10px;
+        }
+    }
+
+    .resource-img {
+
+        img {
+            width: 300px;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: $lt-medium) {
+
+        .resource-img {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: $medium) {
+        padding: 50px 0;
+
+        .left-col {
+            float: left;
+            width: 60%;
+        }
+
+        .resource-img {
+            float: right;
+            width: 40%;
+        }
+    }
+}
